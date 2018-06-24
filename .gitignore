@@ -37,6 +37,8 @@
 *.i*86
 *.x86_64
 *.hex
+*.iml
+*.xml
 
 # Debug files
 *.dSYM/
@@ -47,6 +49,9 @@
 # Kernel Module Compile Results
 *.mod*
 *.cmd
+
+node_modules/
+npm-debug.log
 modules.order
 Module.symvers
 Mkfile.old
