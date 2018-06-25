@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "outDir": "dist/js",
+    "lib": ["es7", "dom", "es2017.object"],
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": false,
+    "baseUrl": "."
+  },
+  "path": {
+    "_api/*": ["./src/apis/*"],
+    "_pages/*": ["./src/client/pages"],
+    "_components/*":["./src/client/components"]
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [ "src/**/*"]
+}
