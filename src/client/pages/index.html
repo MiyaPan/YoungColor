@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
     <head>
         <meta charset="UTF-8">
         <title>Architecture101</title>
     </head>
-    <body ng-app="myApp">
+    <body ng-cloak>
         <div ng-controller="AppCtrl">
             {{count}}
         </div>
-        <!--<div ng-view></div>-->
+        <div ng-view></div>
     </body>
     <script src="../../../dist/js/bundle.js"></script>
 </html>

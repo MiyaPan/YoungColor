@@ -2,7 +2,6 @@ process.title = 'myApp';
 
 let express = require('express');
 let fs = require('fs');
-// let multer = require('multer');
 let mongoose = require('mongoose');
 
 
@@ -11,9 +10,13 @@ let mongoose = require('mongoose');
  */
 let app = express();
 
-// app.get('/', function (req, res) {
-//     res.sendfile('./public/mian.html');
-// });
+app.get('/', (req, res) => {
+    res.sendfile('./src/client/pages/index.html');
+});
+
+app.get('/dist/js/bundle.js', (req, res) => {
+    res.sendfile('./dist/js/bundle.js');
+});
 //
 // app.get('/get', function (req, res) {
 //     var params = {
@@ -48,26 +51,25 @@ let app = express();
 //     // app.use(express.logger('dev'));
 // });
 
-// var server = app.listen(8081,function () {
-//     var host = server.address().address;
-//     var port = server.address().port;
-//
-//     console.log("server is ok, visit: " + host + ":" + port);
-//     console.log("_dirname: " + __dirname);
-//     console.log("_filename: " + __filename);
-// });
+var server = app.listen(8081,function () {
+    var host = server.address().address;
+    var port = server.address().port;
+
+    console.log("server is ok, visit: " + host + ":" + port);
+});
 
 
 /*
 * dataBase server
 */
+
 let db = mongoose.connection;
 
 mongoose.connect("mongodb://localhost:27017/mydb");
 
 db.on('error', () => console.error.bind(console, 'connection error:'));
 db.on('connected', () => console.log('db connected'));
-db.once('open', () => console.log('dataBase open'));
+db.once('open', () => console.log('db opened'));
 
 let workDraftSchema = mongoose.Schema({
     name: String,
@@ -121,11 +123,11 @@ let work002 = new workDraftModel({
 //     work002.uploaded(work002.name);
 // });
 
-
-workDraftModel.find((err, works) => {
-    if (err) {
-        console.error(err);
-    }
-    console.log('work from db: ' + works)
-});
+//
+// workDraftModel.find((err, works) => {
+//     if (err) {
+//         console.error(err);
+//     }
+//     console.log('work from db: ' + works)
+// });
 
