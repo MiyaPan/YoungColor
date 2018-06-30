@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
 app.get('/dist/js/bundle.js', (req, res) => {
     res.sendfile('./dist/js/bundle.js');
 });
+
+app.get('/dist/styles.css', (req, res) => {
+    res.sendfile('./dist/styles.css');
+});
 //
 // app.get('/get', function (req, res) {
 //     var params = {

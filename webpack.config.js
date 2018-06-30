@@ -1,4 +1,5 @@
 const path = require('path');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const webpack = require('webpack'); //访问内置的插件
 
@@ -21,8 +22,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: '/\.less$/',
-                use: ['css-loader', 'less-loader'],
+                test: /\.(css|less)?$/,
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use: ['css-loader', 'less-loader']
+                }),
                 include: sourceFolder
             },
             {
@@ -52,7 +56,7 @@ module.exports = {
             }
         ]
     },
-    // plugins: [
-    //     new HtmlWebpackPlugin({template: './src/client/pages/index.html'})
-    // ]
+    plugins: [
+        new ExtractTextPlugin("styles.css"),
+    ]
 };

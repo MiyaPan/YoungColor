@@ -1,4 +1,4 @@
-import mainController from './main/mian.controller';
+import MainController from './main/mian.controller';
 import * as mainTemplate from './main/mian.html';
 
 export default router;
@@ -9,9 +9,10 @@ function router ($routeProvider) {
     $routeProvider
         .when('/home', {
             title: 'Project List',
-            controller: mainController,
+            controller: MainController,
             template: mainTemplate,
-            controllerAs: 'list'
+            controllerAs: 'list',
+            bindToController: true
         })
         .when('/about', {
 
