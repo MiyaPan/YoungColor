@@ -1,13 +1,20 @@
-
 <div class="main-container">
+
+    <div class="menu-button" ng-click="list.showMenuAside()">
+        <span></span>
+    </div>
+
     <div class="main-picture-container">
-        123456789
-        <p>{{list.count}}</p>
+        <img ng-src="{{list.getMainPicture()}}">
     </div>
 
     <div class="project-item-container">
         <div ng-repeat="picture in list.pictures" class="{{list.getItemClass(picture)}}">
-            {{picture}}: index: {{list.lineIndex}}
+            <img ng-src="{{picture.url}}" alt="{{picture.name}}">
         </div>
     </div>
 </div>
+
+<ui-aside ng-if="list.isShowMenuAside" class="ui-aside-container" on-close="">
+
+</ui-aside>

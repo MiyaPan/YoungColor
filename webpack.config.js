@@ -1,6 +1,6 @@
 const path = require('path');
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const webpack = require('webpack'); //访问内置的插件
 
 let sourceFolder = [path.resolve(__dirname, './src')];
@@ -46,7 +46,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.html$/,
+                test: /\.html?$/,
                 use: [ {
                     loader: 'html-loader',
                     options: {
@@ -58,5 +58,10 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("styles.css"),
+        new HtmlWebpackPlugin({
+            template: 'src/client/pages/index.html',
+            filename: 'index.html',
+            inject: false
+        })
     ]
 };
