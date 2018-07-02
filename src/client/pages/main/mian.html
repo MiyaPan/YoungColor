@@ -15,6 +15,5 @@
     </div>
 </div>
 
-<ui-aside ng-if="list.isShowMenuAside" class="ui-aside-container" on-close="">
-
+<ui-aside ng-show="list.isShowMenuAside" class="ui-aside-container" on-close="list.onClose()">
 </ui-aside>

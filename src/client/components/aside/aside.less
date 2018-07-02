@@ -5,13 +5,16 @@
 .ui-aside {
   position: fixed;
   left: 0px;
-  transition: 0.4s right cubic-bezier(.2, .9, .25, 1);
+  -webkit-transition: 1s cubic-bezier(.2, .9, .25, 1);
+  -moz-transition: 1s cubic-bezier(.2, .9, .25, 1);
+  -o-transition: 1s cubic-bezier(.2, .9, .25, 1);
+  transition: left 1s cubic-bezier(.2, .9, .25, 1);
   top: 0;
   bottom: 0;
   width: 300px;
-  background-color: white;
   box-shadow: -2px 0 5px 0 rgba(0, 0, 0, .3);
   border-right: 1px solid #aaa;
+
   &.visible {
     left: 0;
     overflow-y: auto;
@@ -30,10 +33,10 @@
   .ui-aside-close {
     display: block;
     position: fixed;
-    right: 0;
-    top: 0;
-    width: 32px;
-    height: 32px;
+    left: 220px;
+    top: 30px;
+    width: 50px;
+    height: 50px;
     transition: transform .25s ease-in-out;
 
     &:hover {
@@ -49,7 +52,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      width: 32px;
+      width: 50px;
       height: 0;
       border-top: 1px solid rgba(0,0,0,0.5);
       transform: rotate(45deg);
@@ -64,7 +67,7 @@
       right: 0;
       top: 0;
       bottom: 0;
-      width: 32px;
+      width: 50px;
       height: 0;
       border-top: 1px solid rgba(0,0,0,0.5);
       transform: rotate(-45deg);
@@ -74,44 +77,16 @@
 
   .ui-aside-panel {
     position: absolute;
-    top: @unit-triple;
+    top: 85px;
     bottom: 0;
     left: 0;
     right: 0;
     padding: @unit-half @unit-half 0;
     overflow-x: hidden;
+    font-size: 20px;
 
-    .ui-aside-panel-content {
-      padding-left: @unit-half;
-      padding-right: @unit-half;
-      padding-top: @unit;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: @unit-half * 11;
-      overflow: auto;
-
-      &.ui-aside-panel-footer-1-btn {
-        bottom: @unit-half * 6;
-      }
-
-      &.ui-aside-panel-footer-3-btn {
-        bottom: @unit-half * 15;
-      }
-    }
-
-    .ui-aside-panel-footer {
-      position: absolute;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-      max-height: @unit-half * 11;
-      padding: @unit-half @unit-half 0px @unit-half;
-
-      .ui-btn {
-        margin-bottom: @unit-half;
-      }
+    .ui-aside-item {
+      margin: 55px 120px 40px 108px;
     }
   }
 }

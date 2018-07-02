@@ -1,9 +1,4 @@
-body {
-  height: 100%;
-  width: 100%;
-}
-
-.main-container {
+.about-container {
 
   .menu-button {
     position: fixed;
@@ -48,43 +43,21 @@ body {
     }
   }
 
-  .main-picture-container {
-    height: 100vh;
-    width: 100%;
+  .about-picture-container {
+    height: 85vh;
+    padding: 56px 0 0 120px;
+    display: flex;
+    flex-direction: row;
+  }
+  .picture-item {
+    height: 100%;
+    width: 45%;
   }
 
-  .project-item-container {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    border: 1px dashed gray;
-    grid-gap: 3px 5px;
-
-    .middle-picture-first-line {
-      grid-column: 1 /span 3;
-      height: 50vh;
-    }
-    .small-picture-first-line {
-      grid-column: 4 /span 2;
-      height: 50vh;
-    }
-    .big-picture-first-line {
-      grid-column: 6 /span 5;
-      height: 50vh;
-    }
-    .small-picture-second-line {
-      grid-column: 1 /span 2;
-      height: 50vh;
-    }
-    .big-picture-second-line {
-      grid-column: 3 /span 5;
-      height: 50vh;
-    }
-    .middle-picture-second-line {
-      grid-column: 8 /span 3;
-      height: 50vh;
-    }
+  .description {
+    padding: 30vh 40px;
+    width: 45%;
   }
-
   img {
     width: 100%;
     height: 100%;

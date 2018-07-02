@@ -1,5 +1,5 @@
 import controller from './aside.controller';
-import * as asideTemplate from '../aside/aside.html';
+import * as asideTemplate from './aside.html';
 import './aside.less';
 
 export default function () {

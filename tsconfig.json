@@ -16,6 +16,7 @@
     "_pages/*": ["./src/client/pages"],
     "_components/*":["./src/client/components"]
   },
+  "files": ["./main.d.ts"],
   "exclude": [
     "node_modules"
   ],

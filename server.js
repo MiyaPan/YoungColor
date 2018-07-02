@@ -39,6 +39,18 @@ app.get('/public/mainPicture', (req, res) => {
     res.sendfile('./public/images/main.jpg');
 });
 
+app.get('/public/about-01.jpeg', (req, res) => {
+    res.sendfile('./public/images/about-01.jpeg');
+});
+
+app.get('/public/about-02.jpeg', (req, res) => {
+    res.sendfile('./public/images/about-02.jpeg');
+});
+
+app.get('/public/about-03.jpeg', (req, res) => {
+    res.sendfile('./public/images/about-03.jpeg');
+});
+
 //
 // app.get('/get', function (req, res) {
 //     var params = {
@@ -331,10 +343,10 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     console.log('work from db: ' + works)
 // }).remove().exec();
 
-workDraftModel.find((err, works) => {
-    if (err) {
-        console.error(err);
-    }
-    console.log('work from db: ' + works)
-});
+// workDraftModel.find((err, works) => {
+//     if (err) {
+//         console.error(err);
+//     }
+//     console.log('work from db: ' + works)
+// });
 

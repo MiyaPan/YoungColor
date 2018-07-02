@@ -15,7 +15,6 @@ export default class mainController {
     }
 
     private init () {
-        // this.pictures = [1,2,3,4,5,6,7,8,9,10,11,12,13];
         this.reload();
     }
 
@@ -49,5 +48,9 @@ export default class mainController {
 
     private showMenuAside () {
         this.isShowMenuAside = true;
+    }
+
+    private onClose () {
+        this.isShowMenuAside = false;
     }
 }
