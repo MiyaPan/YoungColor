@@ -2,6 +2,9 @@ import MainController from './main/mian.controller';
 import * as MainTemplate from './main/mian.html';
 import AboutController from './about/about.controller';
 import * as AboutTemplate from './about/about.html';
+import ContactController from './contact/contact.controller';
+import * as ContactTemplate from './contact/contact.html';
+
 
 export default router;
 
@@ -31,11 +34,11 @@ function router ($routeProvider) {
             // bindToController: true
         })
         .when('/contact', {
-            // title: 'Contact',
-            // controller: AboutController,
-            // template: AboutTemplate,
-            // controllerAs: 'contact',
-            // bindToController: true
+            title: 'Contact',
+            controller: ContactController,
+            template: ContactTemplate,
+            controllerAs: 'contact',
+            bindToController: true
         })
         .otherwise({
             redirectTo: '/home'

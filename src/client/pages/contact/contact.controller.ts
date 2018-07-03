@@ -1,6 +1,6 @@
-import '../about/about.less';
+import '../contact/contact.less';
 
-export default class AboutController {
+export default class ContactController {
     public static $inject = ['$scope'];
 
     private isShowMenuAside: boolean = false;
