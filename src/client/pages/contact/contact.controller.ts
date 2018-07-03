@@ -9,15 +9,7 @@ export default class ContactController {
     }
 
     private getPicture01 () {
-        return './public/about-01.jpeg';
-    }
-
-    private getPicture02 () {
-        return './public/about-02.jpeg';
-    }
-
-    private getPicture03 () {
-        return './public/about-03.jpeg';
+        return './public/images-01.jpeg';
     }
 
     private showMenuAside () {

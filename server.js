@@ -36,19 +36,15 @@ app.get('/public/images/:id', (req, res) => {
 });
 
 app.get('/public/mainPicture', (req, res) => {
-    res.sendfile('./public/images/main.jpg');
+    res.sendfile('./public/images/main-big-background.jpg');
 });
 
-app.get('/public/about-01.jpeg', (req, res) => {
-    res.sendfile('./public/images/about-01.jpeg');
+app.get('/public/images-01.jpeg', (req, res) => {
+    res.sendfile('./public/images/images-01.jpeg');
 });
 
-app.get('/public/about-02.jpeg', (req, res) => {
-    res.sendfile('./public/images/about-02.jpeg');
-});
-
-app.get('/public/about-03.jpeg', (req, res) => {
-    res.sendfile('./public/images/about-03.jpeg');
+app.get('/public/images-big.jpg', (req, res) => {
+    res.sendfile('./public/images/images-big.jpg');
 });
 
 //

@@ -1,0 +1,27 @@
+<div class="images-container">
+
+    <div class="menu-button" ng-click="images.showMenuAside()">
+        <span></span>
+    </div>
+
+    <div class="images-picture-container">
+        <img ng-src="{{images.getMainPicture()}}">
+    </div>
+
+    <div class="logo">
+        <span class="emo-logo">E&nbsp;M&nbsp;O/</span><span class="architect-logo">ARCHITECT</span>
+    </div>
+
+    <div class="emo-center">
+        EMO
+    </div>
+
+    <div class="project-item-container">
+        <div ng-repeat="picture in images.pictures" class="{{images.getItemClass(picture)}}">
+            <img ng-src="{{picture.url}}" alt="{{picture.name}}">
+        </div>
+    </div>
+</div>
+
+<ui-aside ng-show="images.isShowMenuAside" class="ui-aside-container" on-close="images.onClose()">
+</ui-aside>

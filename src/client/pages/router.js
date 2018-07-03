@@ -1,7 +1,7 @@
 import MainController from './main/mian.controller';
 import * as MainTemplate from './main/mian.html';
-import AboutController from './about/about.controller';
-import * as AboutTemplate from './about/about.html';
+import AboutController from './images/images.controller';
+import * as AboutTemplate from './images/images.html';
 import ContactController from './contact/contact.controller';
 import * as ContactTemplate from './contact/contact.html';
 
@@ -19,11 +19,11 @@ function router ($routeProvider) {
             controllerAs: 'list',
             bindToController: true
         })
-        .when('/about', {
-            title: 'About',
+        .when('/images', {
+            title: 'Images',
             controller: AboutController,
             template: AboutTemplate,
-            controllerAs: 'about',
+            controllerAs: 'images',
             bindToController: true
         })
         .when('/project', {

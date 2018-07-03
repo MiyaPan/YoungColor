@@ -6,8 +6,8 @@ export default class {
     public redirectToPage (name) {
         if (name === 'home') {
             this.$location.path('/home');
-        } else if (name === 'about') {
-            this.$location.path('/about');
+        } else if (name === 'images') {
+            this.$location.path('/images');
         }else if (name === 'project') {
             this.$location.path('/project');
         } else {
