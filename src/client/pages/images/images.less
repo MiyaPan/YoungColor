@@ -8,8 +8,9 @@ body {
 .images-container {
 
   .menu-button {
+    z-index: 10;
     position: fixed;
-    right: 60px;
+    right: 50px;
     top: 60px;
     width: 40px;
     height: 40px;
@@ -58,44 +59,50 @@ body {
   .project-item-container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    border: 1px dashed gray;
     grid-gap: 3px 5px;
 
     .middle-picture-first-line {
       grid-column: 1 /span 3;
       height: 50vh;
+      overflow: hidden;
     }
     .small-picture-first-line {
       grid-column: 4 /span 2;
       height: 50vh;
+      overflow: hidden;
     }
     .big-picture-first-line {
       grid-column: 6 /span 5;
       height: 50vh;
+      overflow: hidden;
     }
     .small-picture-second-line {
       grid-column: 1 /span 2;
       height: 50vh;
+      overflow: hidden;
     }
     .big-picture-second-line {
       grid-column: 3 /span 5;
       height: 50vh;
+      overflow: hidden;
     }
     .middle-picture-second-line {
       grid-column: 8 /span 3;
       height: 50vh;
+      overflow: hidden;
     }
   }
 
   .logo {
     position: fixed;
-    left: 100px;
+    left: 50px;
     top: 60px;
     color: white;
     font-family: Gill Sans, Verdana;
+    z-index: 10;
 
     .emo-logo {
-      font-size: 35px;
+      font-size: 40px;
     }
     .architect-logo {
       font-size: 20px;
@@ -112,10 +119,19 @@ body {
   img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
+    transition: all 0.6s;
+    -moz-transition: all 0.6s;  /* 0.6s完成过渡效果 */
+    -webkit-transition: all 0.6s;
+
+    &:hover{
+      transform: scale(1.2);  /* 放大1.2倍 */
+    }
   }
 }
 
 .ui-aside-container {
+  z-index: 20;
   position: fixed;
   right: 0;
   top: 0;

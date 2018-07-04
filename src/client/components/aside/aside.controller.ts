@@ -8,8 +8,8 @@ export default class {
             this.$location.path('/home');
         } else if (name === 'images') {
             this.$location.path('/images');
-        }else if (name === 'project') {
-            this.$location.path('/project');
+        }else if (name === 'projects') {
+            this.$location.path('/projects');
         } else {
             this.$location.path('/contact');
         }

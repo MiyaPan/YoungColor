@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-.main-container {
+.projects-container {
 
   .menu-button {
     z-index: 10;
@@ -22,7 +22,7 @@ body {
       width: 100%;
       height: 3px;
       margin-top: -2px;
-      background-color: white;
+      background-color: black;
       content: '';
 
       &:before {
@@ -32,7 +32,7 @@ body {
         width: 100%;
         height: 3px;
         margin-top: -14px;
-        background: white;
+        background: black;
         transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
         content: '';
       }
@@ -44,27 +44,68 @@ body {
         width: 100%;
         height: 3px;
         margin-top: 10px;
-        background: white;
+        background: black;
         transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
         content: '';
       }
     }
   }
 
-  .main-picture-container {
+  .projects-picture-container {
     height: 100vh;
     width: 100%;
   }
 
-  .main-description {
-    display: flex;
-    align-items: center;
-    height: 40vh;
+  .projects-description {
+    height: 45vh;
+    margin-top: 30vh;
+    margin-left: 85px;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 0;
+    font-size: 95px;
+    line-height: 95px;
+    font-weight: 200;
     width: 100%;
+    color: black;
     p {
-      line-height: 45px;
-      font-size: 22px;
-      font-family: Georgia,serif;
+      //line-height: 45px;
+      //font-size: 22px;
+      //font-family: Georgia,serif;
+    }
+  }
+
+  .project-item-container {
+    width: 100%;
+    .project-item {
+      width: 100%;
+      height: 70vh;
+      overflow: hidden;
+
+      img {
+        cursor: pointer;
+        transition: all 0.6s;
+        -moz-transition: all 0.6s;  /* 0.6s完成过渡效果 */
+        -webkit-transition: all 0.6s;
+
+        &:hover{
+          transform: scale(1.2);  /* 放大1.2倍 */
+        }
+      }
+
+      .project-description {
+        position: relative;
+        bottom: 30vh;
+        width: 40%;
+        color: white;
+        text-transform: uppercase;
+        margin-left: 30px;
+        .project-title {
+          font-size: 15px;
+        }
+        .project-introduction {
+          font-size: 40px;
+        }
+      }
     }
   }
 
@@ -72,7 +113,7 @@ body {
     position: fixed;
     left: 50px;
     top: 60px;
-    color: white;
+    color: black;
     font-family: Gill Sans, Verdana;
     z-index: 10;
 

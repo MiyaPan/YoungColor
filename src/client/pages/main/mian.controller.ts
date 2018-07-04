@@ -11,18 +11,6 @@ export default class mainController {
     private isShowMenuAside: boolean = false;
 
     constructor (private $scope) {
-        this.init();
-    }
-
-    private init () {
-        this.reload();
-    }
-
-    private reload () {
-        return listApi.getList().then((data) => {
-            this.pictures = data;
-            this.$scope.$apply();
-        });
     }
 
     private getItemClass (picture) {

@@ -1,10 +1,10 @@
 import listApi from '../../../apis/list.api';
-import './/images.less';
+import '../projects/projects.less';
 
-export default class ImagesController {
+export default class ProjectsController {
     public static $inject = ['$scope'];
 
-    private pictures: any[] = [];
+    private list: any[] = [];
 
     private itemCountOfEachLine: number = 6;
     private isShowMenuAside: boolean = false;
@@ -18,14 +18,14 @@ export default class ImagesController {
     }
 
     private reload () {
-        return listApi.getImageList().then((data) => {
-            this.pictures = data;
+        return listApi.getProjectList().then((data) => {
+            this.list = data;
             this.$scope.$apply();
         });
     }
 
     private getItemClass (picture) {
-        const lineIndex = this.pictures.indexOf(picture) % this.itemCountOfEachLine;
+        const lineIndex = this.list.indexOf(picture) % this.itemCountOfEachLine;
         if (lineIndex === 0) {
             return 'middle-picture-first-line';
         } else if (lineIndex === 1) {
@@ -41,8 +41,8 @@ export default class ImagesController {
         }
     }
 
-    private getMainPicture () {
-        return './public/images-big.jpg';
+    private getProjectsList () {
+        return './public/projects';
     }
 
     private showMenuAside () {

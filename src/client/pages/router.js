@@ -4,7 +4,8 @@ import AboutController from './images/images.controller';
 import * as AboutTemplate from './images/images.html';
 import ContactController from './contact/contact.controller';
 import * as ContactTemplate from './contact/contact.html';
-
+import ProjectsController from './projects/projects.controller';
+import *as ProjectsTemplate from './projects/projects.html';
 
 export default router;
 
@@ -26,12 +27,12 @@ function router ($routeProvider) {
             controllerAs: 'images',
             bindToController: true
         })
-        .when('/project', {
-            // title: 'Project List',
-            // controller: MainController,
-            // template: MainTemplate,
-            // controllerAs: 'project',
-            // bindToController: true
+        .when('/projects', {
+            title: 'Project List',
+            controller: ProjectsController,
+            template: ProjectsTemplate,
+            controllerAs: 'projects',
+            bindToController: true
         })
         .when('/contact', {
             title: 'Contact',
