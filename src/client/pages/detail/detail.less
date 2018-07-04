@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 
-.main-container {
+.detail-container {
 
   .menu-button {
     z-index: 10;
@@ -51,46 +51,54 @@ body {
     }
   }
 
-  .main-picture-container {
+  .detail-picture-container {
+    height: 80vh;
+    width: 100%;
+  }
+  .detail-main-container {
     height: 100vh;
     width: 100%;
   }
 
-  .main-description {
+  .detail-description {
     display: flex;
     align-items: center;
-    height: 40vh;
-    padding: 10px 60px;
-    p {
-      line-height: 45px;
-      font-size: 22px;
-      font-family: Georgia,serif;
+    height: 70vh;
+    width: 100%;
+    .left-introduction {
+      margin-left: 20%;
+      width: 45%;
+      .project-title {
+        margin-bottom: 165px;
+        .title {
+          margin-bottom: 10px;
+        }
+      }
+      .project-date {
+        .time {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .right-introduction {
+      width: 50%;
+      margin-right: 60px;
     }
   }
 
-  .logo {
+  .back {
     position: fixed;
     left: 50px;
-    top: 60px;
-    color: white;
-    font-family: Gill Sans, Verdana;
+    top: 55px;
     z-index: 10;
-
-    .emo-logo {
-      font-size: 40px;
-    }
-    .architect-logo {
-      font-size: 20px;
-    }
+    font-size: 23px;
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: monospace;
   }
-  .emo-center {
-    position: absolute;
-    left: 44%;
-    top: 40%;
-    font-family: times, Times New Roman, times-roman, georgia, serif;
-    font-size: 120px;
-  }
-
   img {
     width: 100%;
     height: 100%;

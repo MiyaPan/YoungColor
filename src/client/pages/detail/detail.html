@@ -1,0 +1,41 @@
+<div class="detail-container">
+
+    <div class="back" ng-click="detail.back()">
+        <span>&laquo;BACK</span>
+    </div>
+
+    <div class="menu-button" ng-click="detail.showMenuAside()">
+        <span></span>
+    </div>
+
+    <div class="detail-main-container">
+        <img ng-src="{{detail.project.url}}">
+    </div>
+
+    <div class="detail-description">
+        <div class="left-introduction">
+            <div class="project-title">
+                <div class="title">TITLE</div>
+                {{detail.project.title}}
+            </div>
+            <div class="project-date">
+                <div class="time">TIME</div>
+                {{detail.project.createTime | date : 'yyyy-MM-dd'}}
+            </div>
+        </div>
+        <div class="right-introduction">
+            <div>DESCRIPTION</div>
+            <p>Ｙou can call me to be a rendering, a visualization, a person who doesn't consider the norms, and it doesn't matter. I just want to express the essential things. They contain my memories, emotions, and nothing more.
+                I don't think that someone who worships others doing things can do his own thing. I don't think that people measured by money can succeed, let alone people who don't have the heart can do something that touches others.
+            </p>
+        </div>
+    </div>
+
+
+    <div ng-repeat="detailPicture in detail.project.detailPictures" class="detail-picture-container">
+        <img ng-src="{{detailPicture.url}}">
+    </div>
+</div>
+
+<ui-aside ng-show="detail.isShowMenuAside" class="ui-aside-container" on-close="detail.onClose()">
+</ui-aside>

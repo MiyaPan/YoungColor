@@ -49,10 +49,33 @@ app.get('/public/images/project/:id', (req, res) => {
     res.sendfile('./public/images/' + req.params.id);
 });
 
+// get detail
+app.get('/project/detail/:id', (req, res) => {
+    workDraftModel.find({_id: req.params.id}, (err, projectDetail) => {
+        if (err) {
+            console.error(err);
+        }
+        res.send(JSON.stringify(projectDetail));
+    });
+});
+
+// detail pictures
+app.get('/detail/:projectId/:detailId', (req, res) => {
+    res.sendfile('./public/images/' + req.params.projectId + '-' + req.params.detailId);
+});
+
 
 // get single picture
-app.get('/public/mainPicture', (req, res) => {
-    res.sendfile('./public/images/main-big-background.jpg');
+app.get('/public/main-picture-01', (req, res) => {
+    res.sendfile('./public/images/main-01.jpg');
+});
+
+app.get('/public/main-picture-02', (req, res) => {
+    res.sendfile('./public/images/main-02.jpg');
+});
+
+app.get('/public/main-picture-03', (req, res) => {
+    res.sendfile('./public/images/main-03.jpg');
 });
 
 app.get('/public/images-01.jpeg', (req, res) => {
@@ -116,7 +139,8 @@ let workDraftSchema = mongoose.Schema({
     url: String,
     description: String,
     author: String,
-    size: Number
+    size: Number,
+    detailPictures: []
 });
 
 workDraftSchema.methods.uploaded = (name) => {
@@ -134,7 +158,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-01.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work002 = new workDraftModel({
@@ -144,7 +194,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-02.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work003 = new workDraftModel({
@@ -154,7 +230,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-03.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work004 = new workDraftModel({
@@ -164,7 +266,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-04.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work005 = new workDraftModel({
@@ -174,7 +302,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-05.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work006 = new workDraftModel({
@@ -184,7 +338,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-06.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work007 = new workDraftModel({
@@ -194,7 +374,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-07.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work008 = new workDraftModel({
@@ -204,7 +410,33 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-08.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
 // let work009 = new workDraftModel({
@@ -214,41 +446,35 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     uploadTime: new Date(2018, 5, 6),
 //     url: './public/images/project/project-09.jpg',
 //     description: 'Saudi Arabia Villa',
-//     author: 'LeeLucky'
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
 // });
 //
-// let work010 = new workDraftModel({
-//     name: '火车站',
-//     title: '火车站效果图',
-//     createTime: new Date(2012, 3, 11),
-//     uploadTime: new Date(2018, 5, 6),
-//     url: './public/images/10.jpeg',
-//     description: '毕设作品--火车站，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，' +
-//     '啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢',
-//     author: 'LeeLucky'
-// });
-//
-// let work011 = new workDraftModel({
-//     name: '图书馆',
-//     title: '图书馆效果图',
-//     createTime: new Date(2012, 3, 11),
-//     uploadTime: new Date(2018, 5, 6),
-//     url: './public/images/11.jpeg',
-//     description: '大学毕设作品--图书馆，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，' +
-//     '啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢',
-//     author: 'LeeLucky'
-// });
-//
-// let work012 = new workDraftModel({
-//     name: '火车站',
-//     title: '火车站效果图',
-//     createTime: new Date(2012, 3, 11),
-//     uploadTime: new Date(2018, 5, 6),
-//     url: './public/images/main.jpg',
-//     description: '毕设作品--火车站，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，' +
-//     '啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢，啦啦啦啦啦啦啦好棒啊啊啊啊简直厉害了呢',
-//     author: 'LeeLucky'
-// });
 // work001.save((err) => {
 //     if(err) {
 //         return console.error(err);
@@ -311,7 +537,7 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     }
 //     work001.uploaded(work001.name);
 // });
-//
+
 
 // images
 
@@ -518,7 +744,7 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     image002.uploaded(image002.name);
 // });
 
-// workDraftModel.find({name: 'image'}, (err, works) => {
+// workDraftModel.find({name: 'project'}, (err, works) => {
 //     if (err) {
 //         console.error(err);
 //     }

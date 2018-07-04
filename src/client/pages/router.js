@@ -5,7 +5,9 @@ import * as AboutTemplate from './images/images.html';
 import ContactController from './contact/contact.controller';
 import * as ContactTemplate from './contact/contact.html';
 import ProjectsController from './projects/projects.controller';
-import *as ProjectsTemplate from './projects/projects.html';
+import * as ProjectsTemplate from './projects/projects.html';
+import DetailController from './detail/detail.controller';
+import * as DetailTemplate from './detail/detail.html';
 
 export default router;
 
@@ -39,6 +41,13 @@ function router ($routeProvider) {
             controller: ContactController,
             template: ContactTemplate,
             controllerAs: 'contact',
+            bindToController: true
+        })
+        .when('/detail/:id', {
+            title: 'Detail',
+            controller: DetailController,
+            template: DetailTemplate,
+            controllerAs: 'detail',
             bindToController: true
         })
         .otherwise({

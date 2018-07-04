@@ -18,7 +18,7 @@ export default class ImagesController {
     }
 
     private reload () {
-        return listApi.getImageList().then((data) => {
+        listApi.getImageList().then((data) => {
             this.pictures = data;
             this.$scope.$apply();
         });

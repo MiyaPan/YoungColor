@@ -15,11 +15,11 @@
     </div>
 
     <div class="project-item-container">
-        <div ng-repeat="picture in projects.list" class="project-item">
-            <img ng-src="{{picture.url}}" alt="{{picture.name}}">
+        <div ng-repeat="project in projects.list" class="project-item" ng-click="projects.showDetail(project)">
+            <img ng-src="{{project.url}}" alt="{{project.name}}">
             <div class="project-description">
-                <div class="project-title">{{picture.title}}</div>
-                <div class="project-introduction">{{picture.description}}</div>
+                <div class="project-title">{{project.title}}</div>
+                <div class="project-introduction">{{project.description}}</div>
             </div>
         </div>
     </div>
