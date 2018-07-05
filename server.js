@@ -539,7 +539,7 @@ work009.save((err) => {
 });
 
 
-images
+// images
 
 let image001 = new workDraftModel({
     name: 'image',
