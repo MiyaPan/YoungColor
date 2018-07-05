@@ -24,6 +24,21 @@ export default class ImagesController {
         });
     }
 
+    private showImageModal (picture) {
+        let modal = document.querySelector('.modal') as HTMLElement;
+        let modalImg = document.querySelector('.modal-content') as HTMLImageElement;
+        let captionText = document.querySelector('.caption');
+
+        modal.style.display = "block";
+        modalImg.src = picture.url;
+        captionText.innerHTML = picture.title;
+    }
+
+    private hideImageModal () {
+        let modal = document.querySelector('.modal') as HTMLElement;
+        modal.style.display = "none";
+    }
+
     private getItemClass (picture) {
         const lineIndex = this.pictures.indexOf(picture) % this.itemCountOfEachLine;
         if (lineIndex === 0) {

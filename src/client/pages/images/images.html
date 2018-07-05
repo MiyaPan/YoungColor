@@ -18,7 +18,13 @@
 
     <div class="project-item-container">
         <div ng-repeat="picture in images.pictures" class="{{images.getItemClass(picture)}}">
-            <img ng-src="{{picture.url}}" alt="{{picture.name}}">
+            <img ng-src="{{picture.url}}" alt="{{picture.name}}" ng-click="images.showImageModal(picture)">
+            <!-- The Modal -->
+            <div class="modal">
+                <span class="close" ng-click="images.hideImageModal()">&times;</span>
+                <img class="modal-content">
+                <div class="caption"></div>
+            </div>
         </div>
     </div>
 </div>
