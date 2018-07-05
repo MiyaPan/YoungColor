@@ -151,598 +151,598 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 
 // projects
 
-let work001 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-01.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work002 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-02.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work003 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-03.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work004 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-04.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work005 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-05.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work006 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-06.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work007 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-07.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work008 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-08.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-let work009 = new workDraftModel({
-    name: 'project',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/project/project-09.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky',
-    detailPictures: [
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-01.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-02.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-03.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-04.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-05.jpg'
-        },
-        {
-            label: 'made in 2018',
-            url: './detail/project-01/detail-06.jpg'
-        },
-    ]
-});
-
-work001.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work001.uploaded(work001.name);
-});
-
-work002.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work002.uploaded(work002.name);
-});
-
-work003.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work001.uploaded(work001.name);
-});
-
-work004.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work002.uploaded(work002.name);
-});
-
-work005.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work001.uploaded(work001.name);
-});
-
-work006.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work002.uploaded(work002.name);
-});
-
-work007.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work001.uploaded(work001.name);
-});
-
-work008.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work002.uploaded(work002.name);
-});
-
-work009.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    work001.uploaded(work001.name);
-});
-
-
-// images
-
-let image001 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-01.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image002 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-02.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image003 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-03.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image004 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-04.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image005 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-05.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image006 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-06.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image007 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-07.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image008 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-08.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image009 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-09.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image010 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-10.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image011 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-11.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-let image012 = new workDraftModel({
-    name: 'image',
-    title: 'Architectural Visualization',
-    createTime: new Date(2012, 3, 11),
-    uploadTime: new Date(2018, 5, 6),
-    url: './public/images/image/image-12.jpg',
-    description: 'Saudi Arabia Villa',
-    author: 'LeeLucky'
-});
-
-image001.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image001.uploaded(image001.name);
-});
-
-image002.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image002.uploaded(image002.name);
-});
-
-image003.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image001.uploaded(image001.name);
-});
-
-image004.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image002.uploaded(image002.name);
-});
-
-image005.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image001.uploaded(image001.name);
-});
-
-image006.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image002.uploaded(image002.name);
-});
-
-image007.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image001.uploaded(image001.name);
-});
-
-image008.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image002.uploaded(image002.name);
-});
-
-image009.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image001.uploaded(image001.name);
-});
-
-image010.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image002.uploaded(image002.name);
-});
-image011.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image001.uploaded(image001.name);
-});
-
-image012.save((err) => {
-    if(err) {
-        return console.error(err);
-    }
-    image002.uploaded(image002.name);
-});
+// let work001 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-01.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work002 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-02.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work003 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-03.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work004 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-04.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work005 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-05.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work006 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-06.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work007 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-07.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work008 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-08.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// let work009 = new workDraftModel({
+//     name: 'project',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/project/project-09.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky',
+//     detailPictures: [
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-01.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-02.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-03.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-04.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-05.jpg'
+//         },
+//         {
+//             label: 'made in 2018',
+//             url: './detail/project-01/detail-06.jpg'
+//         },
+//     ]
+// });
+//
+// work001.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work001.uploaded(work001.name);
+// });
+//
+// work002.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work002.uploaded(work002.name);
+// });
+//
+// work003.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work001.uploaded(work001.name);
+// });
+//
+// work004.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work002.uploaded(work002.name);
+// });
+//
+// work005.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work001.uploaded(work001.name);
+// });
+//
+// work006.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work002.uploaded(work002.name);
+// });
+//
+// work007.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work001.uploaded(work001.name);
+// });
+//
+// work008.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work002.uploaded(work002.name);
+// });
+//
+// work009.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     work001.uploaded(work001.name);
+// });
+//
+//
+// // images
+//
+// let image001 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-01.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image002 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-02.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image003 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-03.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image004 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-04.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image005 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-05.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image006 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-06.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image007 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-07.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image008 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-08.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image009 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-09.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image010 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-10.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image011 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-11.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// let image012 = new workDraftModel({
+//     name: 'image',
+//     title: 'Architectural Visualization',
+//     createTime: new Date(2012, 3, 11),
+//     uploadTime: new Date(2018, 5, 6),
+//     url: './public/images/image/image-12.jpg',
+//     description: 'Saudi Arabia Villa',
+//     author: 'LeeLucky'
+// });
+//
+// image001.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image001.uploaded(image001.name);
+// });
+//
+// image002.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image002.uploaded(image002.name);
+// });
+//
+// image003.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image001.uploaded(image001.name);
+// });
+//
+// image004.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image002.uploaded(image002.name);
+// });
+//
+// image005.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image001.uploaded(image001.name);
+// });
+//
+// image006.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image002.uploaded(image002.name);
+// });
+//
+// image007.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image001.uploaded(image001.name);
+// });
+//
+// image008.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image002.uploaded(image002.name);
+// });
+//
+// image009.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image001.uploaded(image001.name);
+// });
+//
+// image010.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image002.uploaded(image002.name);
+// });
+// image011.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image001.uploaded(image001.name);
+// });
+//
+// image012.save((err) => {
+//     if(err) {
+//         return console.error(err);
+//     }
+//     image002.uploaded(image002.name);
+// });
 //
 // workDraftModel.find({name: 'project'}, (err, works) => {
 //     if (err) {
