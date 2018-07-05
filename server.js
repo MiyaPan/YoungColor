@@ -744,17 +744,24 @@ let workDraftModel = mongoose.model('workDraft', workDraftSchema);
 //     image002.uploaded(image002.name);
 // });
 //
-// // workDraftModel.find({name: 'project'}, (err, works) => {
-// //     if (err) {
-// //         console.error(err);
-// //     }
-// //     console.log('work from db: ' + works)
-// // }).remove().exec();
-//
-// workDraftModel.find((err, works) => {
-//     if (err) {
-//         console.error(err);
-//     }
-//     console.log('work from db: ' + works)
-// });
+workDraftModel.find({name: 'project'}, (err, works) => {
+    if (err) {
+        console.error(err);
+    }
+    console.log('work from db: ' + works)
+}).remove().exec();
+
+workDraftModel.find({name: 'image'}, (err, works) => {
+    if (err) {
+        console.error(err);
+    }
+    console.log('work from db: ' + works)
+}).remove().exec();
+
+workDraftModel.find((err, works) => {
+    if (err) {
+        console.error(err);
+    }
+    console.log('work from db: ' + works)
+});
 
