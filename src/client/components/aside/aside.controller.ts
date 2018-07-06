@@ -1,5 +1,7 @@
 export default class {
     static $inject = ['$location'];
+
+    public show: boolean;
     constructor(private $location) {
     }
 
@@ -14,4 +16,4 @@ export default class {
             this.$location.path('/contact');
         }
     }
-}
+ }

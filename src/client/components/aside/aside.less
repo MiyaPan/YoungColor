@@ -4,15 +4,18 @@
 
 .ui-aside {
   position: fixed;
-  right: 0px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  height: 100vh;
+  width: 300px;
   -webkit-transition: 1s cubic-bezier(.2, .9, .25, 1);
   -moz-transition: 1s cubic-bezier(.2, .9, .25, 1);
   -o-transition: 1s cubic-bezier(.2, .9, .25, 1);
-  transition: right 1s cubic-bezier(.2, .9, .25, 1);
-  top: 0;
-  bottom: 0;
-  width: 300px;
+  transition: left 1s cubic-bezier(.2, .9, .25, 1);
   box-shadow: -2px 0 5px 0 rgba(0, 0, 0, .3);
+  background-color: white;
 
   &.visible {
     right: 0;
@@ -88,4 +91,22 @@
       margin: 55px 120px 40px 108px;
     }
   }
+}
+
+.aside-open {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  transition: all 1s cubic-bezier(.2, .9, .25, 1);
+}
+
+.aside-close {
+  -webkit-transform: translateX(300px);
+  -moz-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  -o-transform: translateX(300px);
+  transform: translateX(300px);
+  transition: all 0.6s cubic-bezier(.2, .9, .25, 1);
 }

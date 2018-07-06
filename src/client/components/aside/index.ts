@@ -6,6 +6,7 @@ export default function () {
     return {
         restrict: 'E',
         scope: {
+            show: '=',
             onClose: '&?'
         },
         template: asideTemplate,

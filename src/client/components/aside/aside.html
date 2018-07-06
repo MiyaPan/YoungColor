@@ -1,4 +1,4 @@
-<div class="ui-aside">
+<div class="ui-aside"  ng-class="{'aside-open': vm.show, 'aside-close': !vm.show}">
     <header class="ui-aside-header">
         <div class="ui-aside-close" ng-click="vm.onClose()"></div>
     </header>
