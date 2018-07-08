@@ -50,6 +50,8 @@
 *.mod*
 *.cmd
 
+*.idea/
+
 node_modules/
 npm-debug.log
 modules.order

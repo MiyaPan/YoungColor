@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{es6-collections-DefinitelyTyped, es6-promise-DefinitelyTyped, es6-shim-DefinitelyTyped, express-brute-mongo-DefinitelyTyped, express-fileupload-DefinitelyTyped, express-route-fs-DefinitelyTyped, node_module}" />
-    <includedPredefinedLibrary name="Node.js Core" />
-  </component>
-</project>
