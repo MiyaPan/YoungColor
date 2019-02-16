@@ -14,7 +14,8 @@
   "path": {
     "_api/*": ["./src/apis/*"],
     "_pages/*": ["./src/client/pages"],
-    "_components/*":["./src/client/components"]
+    "_components/*":["./src/client/components"],
+    "_common/*": ["./src/common"]
   },
   "files": ["./main.d.ts"],
   "exclude": [

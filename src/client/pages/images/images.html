@@ -1,15 +1,10 @@
 <div class="images-container">
-
+    <ui-logo></ui-logo>
     <div class="menu-button" ng-click="images.showMenuAside()">
         <span></span>
     </div>
-
     <div class="images-picture-container">
         <img ng-src="{{images.getMainPicture()}}">
-    </div>
-
-    <div class="logo">
-        <span class="emo-logo">E&nbsp;M&nbsp;O/</span><span class="architect-logo">ARCHITECT</span>
     </div>
 
     <div class="emo-center">
@@ -29,5 +24,4 @@
     </div>
 </div>
 
-<ui-aside show="images.isShowMenuAside" on-close="images.onClose()">
-</ui-aside>
+<ui-aside show="images.isShowMenuAside" on-close="images.onClose()"></ui-aside>

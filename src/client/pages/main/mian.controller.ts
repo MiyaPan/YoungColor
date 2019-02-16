@@ -1,4 +1,4 @@
-import listApi from '../../../apis/list.api';
+import listApi from '_apis/list.api';
 import '../main/main.less';
 
 export default class MainController {

@@ -1,13 +1,9 @@
 <div class="projects-container">
-
+    <ui-logo></ui-logo>
+    <ui-button class="filter-button" ng-click="projects.showMenuAside()">Filter Project</ui-button>
     <div class="menu-button" ng-click="projects.showMenuAside()">
         <span></span>
     </div>
-
-    <div class="logo">
-        <span class="emo-logo">E&nbsp;M&nbsp;O/</span><span class="architect-logo">ARCHITECT</span>
-    </div>
-
 
     <div class="projects-description">
         <div>IMAGES</div>
@@ -25,5 +21,4 @@
     </div>
 </div>
 
-<ui-aside show="projects.isShowMenuAside" on-close="projects.onClose()">
-</ui-aside>
+<ui-aside show="projects.isShowMenuAside" on-close="projects.onClose()"></ui-aside>

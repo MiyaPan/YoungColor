@@ -10,7 +10,8 @@ module.exports = {
         alias: {
             _apis: path.resolve(__dirname, './src/apis'),
             _pages: path.resolve(__dirname, './src/client/pages'),
-            _components: path.resolve(__dirname, './src/client/components')
+            _components: path.resolve(__dirname, './src/client/components'),
+            _common: path.resolve(__dirname, './src/common')
         },
         extensions: ['.ts', '.tsx', '.js']
     },

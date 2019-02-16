@@ -11,7 +11,8 @@
     "express": "^4.4.8",
     "handlebars": "^4.0.10",
     "mongoose": "~5.1.6",
-    "style-loader": "^0.21.0"
+    "style-loader": "^0.21.0",
+    "@types/lodash": "4.14.87"
   },
   "devDependencies": {
     "@angular/common": "4.0.1",
