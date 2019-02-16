@@ -8,6 +8,7 @@ import Button from '../components/button';
 import Logo from '../components/logo';
 import Header from '../components/header';
 import MenuButton from '../components/menuButton';
+import SearchBox from '../components/search';
 
 angular.module('myApp', ['ngRoute'])
     .controller('AppCtrl', AppCtrl)
@@ -16,4 +17,5 @@ angular.module('myApp', ['ngRoute'])
     .directive('uiLogo', Logo)
     .directive('uiHeader', Header)
     .directive('uiMenuButton', MenuButton)
+    .directive('uiSearchBox', SearchBox)
     .config(routes);

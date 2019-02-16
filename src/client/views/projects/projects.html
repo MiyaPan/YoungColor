@@ -1,7 +1,13 @@
 <div class="projects-container">
     <div ui-header>
         <ui-logo></ui-logo>
-        <ui-button class="filter-button" ng-click="projects.showMenuAside()">Filter Project</ui-button>
+        <div ui-search-box
+             model="projects.params"
+             placeholder="filter project by title"
+             on-delay="projects.reload()"
+             active="true"
+             noautoshrink
+             class="search-box"></div>
         <ui-menu-button ng-click="projects.showMenuAside()"></ui-menu-button>
     </div>
 

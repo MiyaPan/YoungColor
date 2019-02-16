@@ -1,0 +1,13 @@
+<div class="ui-search" ng-class="{'ui-search-expand':isExpandMode,'ui-search-active':!isExpandMode&&active}">
+    <i ng-click="inputOnClick()"></i>
+    <input type="text" class="ui-search-input"
+           ng-model="model"
+           ng-blur="inputOnBlur()"
+           ng-keydown="onKeyDown($event)"
+           ng-focus="inputOnFocus()"
+           ng-click="inputOnClick()"
+    >
+    <button class="ui-search-clear" ng-click="delete()">×</button>
+    <span class="ui-search-placeholder" ng-show="(isExpandMode||active)&&model.length<1">{{placeholder}}</span>
+    <span class="ui-search-text" ng-click="inputOnClick()">{{message}}</span>
+</div>

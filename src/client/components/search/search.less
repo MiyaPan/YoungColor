@@ -1,0 +1,110 @@
+@import '~_common/style/variables.less';
+
+@search-height: @unit-double;
+@search-active-width: @unit-half * 21;
+
+.ui-search {
+  position: relative;
+  height: @search-height;
+  input::-ms-clear{display:none;}
+  i {
+    position: absolute;
+    display: block;
+    top: -1px;
+    left: 0;
+    width: @unit-double;
+    border-radius: @unit;
+    text-align: center;
+    line-height: @search-height;
+    font-size: @unit;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .ui-search-input {
+    position: absolute;
+    height: @search-height;
+    line-height: @search-height;
+    width: @unit-double;
+    border-radius: @unit;
+    border: 1px solid @medium-litest;
+    background-color: transparent;
+    font-size: @font-size-normal;
+    color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.4s width cubic-bezier(0, 1.15, .65, 1.01);
+  }
+  .ui-search-clear {
+    position: absolute;
+    top: 0;
+    left: @unit-half * 24;
+    bottom: 0;
+    width: @search-height;
+    background: none;
+    border: none;
+    font-size: @unit;
+    line-height: @search-height;
+    z-index: -1;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    transition: 0.2s opacity linear;
+    cursor: default;
+  }
+  .ui-search-placeholder, .ui-search-text {
+    display: inline;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: @unit-double;
+    line-height: @search-height;
+    width: @unit-half * 21;
+  }
+
+  .ui-search-placeholder {
+    font-size: @font-size-normal;
+    color: @medium-darkest;
+    z-index: -1;
+  }
+  .ui-search-text {
+    padding: 0 @unit-half;
+    font-size: @font-size-big;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.1s opacity ease-out;
+  }
+}
+
+.ui-search-active,
+.ui-search-expand {
+  .ui-search-input {
+    width: @search-active-width;
+    padding: 0 @unit-double;
+    color: @black;
+    cursor: text;
+  }
+  .ui-search-clear {
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover {
+      color: @blue;
+    }
+  }
+  .ui-search-text {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    z-index: -1;
+  }
+}
+
+// expand
+.ui-search-expand {
+  .ui-search-input {
+    border: none;
+  }
+  .ui-search-text {
+    display: none;
+  }
+}

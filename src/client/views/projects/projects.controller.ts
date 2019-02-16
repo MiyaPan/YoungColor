@@ -5,7 +5,7 @@ export default class ProjectsController {
     public static $inject = ['$scope', '$location'];
 
     private list: any[] = [];
-
+    private params: string;
     private isShowMenuAside: boolean = false;
 
     constructor (private $scope, private $location) {
@@ -17,7 +17,7 @@ export default class ProjectsController {
     }
 
     private reload () {
-        listApi.getProjectList().then((data) => {
+        listApi.getProjectList(this.params).then((data) => {
             this.list = data;
             this.$scope.$apply();
         });

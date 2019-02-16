@@ -23,6 +23,7 @@
     "@angular/platform-browser": "4.0.1",
     "@angular/platform-browser-dynamic": "4.0.1",
     "@angular/router": "4.0.1",
+    "@types/angular": "1.6.39",
     "angular-route": "^1.7.2",
     "babel-loader": "^7.0.0",
     "body-parser": "^1.17.2",

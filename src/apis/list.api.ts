@@ -11,7 +11,7 @@ function getImageList (): Promise<any> {
     })
 }
 
-function getProjectList (): Promise<any> {
+function getProjectList (params): Promise<any> {
     return new Promise((resolve) => {
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = () => {
