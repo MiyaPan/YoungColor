@@ -11,7 +11,7 @@ let mongoose = require('mongoose');
 let app = express();
 
 app.get('/', (req, res) => {
-    res.sendfile('./src/client/pages/index.html');
+    res.sendfile('./src/client/views/index.html');
 });
 
 app.get('/dist/js/bundle.js', (req, res) => {

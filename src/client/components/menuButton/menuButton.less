@@ -1,0 +1,45 @@
+@import '~_common/style/variables.less';
+
+.menu-button {
+  z-index: 10;
+  position: fixed;
+  right: @unit-triple;
+  top: @unit;
+  width: @unit-double;
+  height: @unit-double;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top: -2px;
+    background-color: @black;
+    content: '';
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      margin-top: -14px;
+      background: black;
+      transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+      content: '';
+    }
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      margin-top: 10px;
+      background: black;
+      transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+      content: '';
+    }
+  }
+}

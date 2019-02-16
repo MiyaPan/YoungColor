@@ -9,13 +9,13 @@ module.exports = {
     resolve: {
         alias: {
             _apis: path.resolve(__dirname, './src/apis'),
-            _pages: path.resolve(__dirname, './src/client/pages'),
+            _views: path.resolve(__dirname, './src/client/views'),
             _components: path.resolve(__dirname, './src/client/components'),
             _common: path.resolve(__dirname, './src/common')
         },
         extensions: ['.ts', '.tsx', '.js']
     },
-    entry: './src/client/pages/index.js',
+    entry: './src/client/views/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js'
@@ -60,7 +60,7 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("styles.css"),
         new HtmlWebpackPlugin({
-            template: 'src/client/pages/index.html',
+            template: 'src/client/views/index.html',
             filename: 'index.html',
             inject: false
         })

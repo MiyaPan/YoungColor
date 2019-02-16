@@ -13,7 +13,7 @@
   },
   "path": {
     "_api/*": ["./src/apis/*"],
-    "_pages/*": ["./src/client/pages"],
+    "_views/*": ["./src/client/views"],
     "_components/*":["./src/client/components"],
     "_common/*": ["./src/common"]
   },

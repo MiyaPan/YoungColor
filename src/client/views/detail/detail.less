@@ -1,0 +1,56 @@
+@import '~_common/style/variables.less';
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(244,244,244);
+  margin: 0;
+}
+
+.detail-container {
+  .detail-picture-container {
+    height: 80vh;
+    width: 100%;
+  }
+  .detail-main-container {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .detail-description {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    .left-introduction {
+      margin-left: 20%;
+      width: 45%;
+      .project-title {
+        margin-bottom: @unit * 8;
+        .title {
+          margin-bottom: @unit-half;
+        }
+      }
+      .project-date {
+        .time {
+          margin-bottom: @unit-half;
+        }
+      }
+    }
+
+    .right-introduction {
+      width: 50%;
+      margin-right: @unit-triple;
+    }
+  }
+  .back {
+    position: fixed;
+    left: @unit-triple;
+    top: @unit;
+    z-index: 10;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
