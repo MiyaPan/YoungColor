@@ -20,6 +20,7 @@ export default class ImagesController {
     private reload () {
         listApi.getImageList().then((data) => {
             this.pictures = data;
+            debugger
             this.$scope.$apply();
         });
     }

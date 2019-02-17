@@ -12,7 +12,9 @@
     "handlebars": "^4.0.10",
     "mongoose": "~5.1.6",
     "style-loader": "^0.21.0",
-    "@types/lodash": "4.14.87"
+    "@types/lodash": "4.14.87",
+    "ramda": "0.25.0",
+    "uuid": "3.3.2"
   },
   "devDependencies": {
     "@angular/common": "4.0.1",

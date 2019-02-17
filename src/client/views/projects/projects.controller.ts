@@ -5,7 +5,10 @@ export default class ProjectsController {
     public static $inject = ['$scope', '$location'];
 
     private list: any[] = [];
-    private params: string;
+    private params = {
+        title: ''
+    };
+
     private isShowMenuAside: boolean = false;
 
     constructor (private $scope, private $location) {
@@ -35,4 +38,10 @@ export default class ProjectsController {
     private onClose () {
         this.isShowMenuAside = false;
     }
+
+    private clearQuery () {
+        this.params.title = '';
+        this.reload();
+    }
+
 }

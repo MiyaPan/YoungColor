@@ -2,9 +2,10 @@
     <div ui-header>
         <ui-logo></ui-logo>
         <div ui-search-box
-             model="projects.params"
+             model="projects.params.title"
              placeholder="filter project by title"
              on-delay="projects.reload()"
+             on-clear="projects.clearQuery()"
              active="true"
              noautoshrink
              class="search-box"></div>
